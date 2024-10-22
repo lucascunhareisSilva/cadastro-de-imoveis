@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html class="has-background-grey-dark">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CORRETORA DE IMOVÉIS</title>
+	<link rel="stylesheet"  href="style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+	<script src='atv.js'></script>
+</head>
+<body>
+	<div class="content">
+	<div class='card has-background-info'>
+		<div class="card-content ">
+			<h1 class='text-centered is-size-4'>SISTEMA DE CADASTRO DE IMÓVEIS</h1>
+			<div class='field flex-content'>
+				<label class='label'>TIPO DA MORADIA:</label>
+				<div class='control '>
+				<div class='select is-loading'>
+					<select name='moradia'>
+						<option value='CASA'>casa</option>
+						<option value='APARTAMENTO'>apartamento</option>
+					</select>
+				</div>
+			</div>
+				<label class='label'>AREA DO IMOVÉL:</label>
+				<div class=control>
+					<input class='input' type="number" name="area" placeholder="area da casa">
+				</div>
+				<label class='label'>ESTÁ ALUGADO OU NÃO: </label>
+				<div class='control'>
+				<div class='select'>
+					<select name="status">
+						<option value="ALUGADO">está alugado</option>
+						<option value='NÃO ALUGADO'>não está alugado</option>
+					</select>
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class=' is-align-items-center my-4 mx-4'>
+			<article class="message ">
+			<div class='message-header has-background-black'>
+  				  <h1 class="is-size-6 control-centered has-text-success-light">DADOS DO FORMULARIO</h1>
+  				</div>
+				<div class="message-body">
+				</div>
+			</article>
+		</div>
+		<div class='buttons is-centered'>
+			<button class='button is-link' onclick="cadastroDADOS()">cadastrar</button>
+
+			<button class='button is-danger' onclick="remover_USER()">remover</button>
+			
+		</div>
+	</div>
+</div>
+</body>
+</html>
